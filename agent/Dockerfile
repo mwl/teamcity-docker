@@ -1,4 +1,4 @@
-FROM mwldk/teamcity-base:9.0.1
+FROM mwldk/teamcity-base:9.1.3
 
 COPY buildAgent.properties /usr/lib/TeamCity/buildAgent/conf/
 

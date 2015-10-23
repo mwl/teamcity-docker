@@ -6,6 +6,10 @@ server:
   container_name: teamcity_server
   ports:
     - "8111:8111"
+  volumes:
+    - ./plugins:/var/teamcity/plugins
+    - ./config:/var/teamcity/config
+    - ./plugins:/var/teamcity/plugins
   restart: always
 
 agent:
