@@ -1,0 +1,14 @@
+# base:
+#   build: base
+
+server:
+  build: server
+  container_name: teamcity_server
+  ports:
+    - "8111:8111"
+  restart: always
+
+agent:
+  build: agent
+  links:
+    - server
